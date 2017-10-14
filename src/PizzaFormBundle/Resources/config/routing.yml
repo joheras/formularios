@@ -1,0 +1,12 @@
+pizza_form1:
+    path:     /pizza
+    defaults: { _controller: PizzaFormBundle:Pizza:pizzaDeliveryManualForm }
+
+pizza_form2:
+    path:     /pizza2
+    defaults: { _controller: PizzaFormBundle:Pizza:pizzaDeliveryObjectForm }
+    
+    
+pizza_form3:
+    path:     /pizza3
+    defaults: { _controller: PizzaFormBundle:Pizza:pizzaDeliveryClassForm }

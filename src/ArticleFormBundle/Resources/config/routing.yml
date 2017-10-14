@@ -1,0 +1,3 @@
+article_form:
+    path:     /article
+    defaults: { _controller: ArticleFormBundle:Article:publish }

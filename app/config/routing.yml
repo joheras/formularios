@@ -1,0 +1,8 @@
+article_form:
+    resource: "@ArticleFormBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+form:
+    resource: "@PizzaFormBundle/Resources/config/routing.yml"
+    prefix:   /

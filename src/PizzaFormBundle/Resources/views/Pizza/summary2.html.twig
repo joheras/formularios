@@ -1,0 +1,12 @@
+<html>
+    <title>Summary</title>
+    <body>
+        <h1>Summary of your request</h1>
+        <p>Name: {{ pedido.custname }}.</p>
+        <p>Telephone: {{ pedido.custtel }}.</p>
+        <p>E-mail: {{ pedido.custemail }}.</p>
+        <p>Pizza size: {{ pedido.size }}.</p>
+        <p>Pizza toppings: {{ pedido.toppings | join(',') }}.</p>
+        <p>Comments: {{ pedido.comments }}</p>
+    </body>
+</html>

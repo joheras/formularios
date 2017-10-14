@@ -1,0 +1,15 @@
+<html>
+    <title>Change status</title>
+    <body>
+        <h1>Summary of the article</h1>
+        <p>Title: {{ article.title }}.</p>
+        <p>Body: {{ article.body }}.</p>
+        <p>Created on: {{ article.createdOn | date }}.</p>
+        <form action="{{ path('article_form') }}" method="post" >
+	{{ form(formulario) }}
+    </form>
+    </body>
+</html>
+
+
+
