@@ -1,0 +1,17 @@
+my_security_homepage:
+    path:     /admin
+    defaults: { _controller: MySecurityBundle:Security:admin }
+    
+usuario_login:
+    path: /usuarios/login
+    defaults: { _controller: MySecurityBundle:Security:login }
+    
+usuario_login_check:
+    path: /usuarios/login_check
+    
+usuario_logout:
+    path: /usuarios/logout
+    
+usuarios:
+    path: /usuarios
+    defaults: { _controller: MySecurityBundle:Security:zonaLogin }
