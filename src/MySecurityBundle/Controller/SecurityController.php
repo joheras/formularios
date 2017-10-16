@@ -48,7 +48,7 @@ class SecurityController extends Controller {
     public function commentAction($id) {
         $comment = $this->get('commentsrepository')->findComment($id);
         $this->denyAccessUnlessGranted('edit', $comment);
-        return $this->render("MySecurityBundle:MySecurity:commenterror.html.twig", array('comment' => $comment));
+        return $this->render("MySecurityBundle:MySecurity:comment.html.twig", array('comment' => $comment));
     }
 
 }
