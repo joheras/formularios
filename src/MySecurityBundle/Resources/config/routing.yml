@@ -15,3 +15,27 @@ usuario_logout:
 usuarios:
     path: /usuarios
     defaults: { _controller: MySecurityBundle:Security:zonaLogin }
+    
+people_login:
+    path: /people/login
+    defaults: { _controller: MySecurityBundle:Security:peopleLogin }
+    
+people_login_check:
+    path: /people/login_check
+    
+people_logout:
+    path: /people/logout
+    
+people:
+    path: /people
+    defaults: { _controller: MySecurityBundle:Security:zonaPeople }
+
+
+people_comments:
+    path: /people/comments
+    defaults: { _controller: MySecurityBundle:Security:comments }
+    
+    
+people_comment:
+    path: /people/comment/{id}
+    defaults: { _controller: MySecurityBundle:Security:comment }

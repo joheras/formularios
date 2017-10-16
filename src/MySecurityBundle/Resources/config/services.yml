@@ -1,4 +1,27 @@
 services:
+    peoplerepository:
+        alias: peoplerepository.imp
+    peoplerepository.imp:
+        class: MySecurityBundle\Infrastructure\Repository\InMemoryPersonRepository
+        public: false
+        
+        
+    my_user_provider:
+        class: MySecurityBundle\Security\MyUserProvider
+        arguments: ["@peoplerepository"]
+    
+    commentsrepository:
+        alias: commentsrepository.imp
+    commentsrepository.imp:
+        class: MySecurityBundle\Infrastructure\Repository\InMemoryCommentRepository
+        public: false
+    
+    
+    comentario.ownervoter:
+        class: MySecurityBundle\Security\OwnerVoter
+        tags:
+            - { name: security.voter }
+    
 #    my_security.example:
 #        class: MySecurityBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]

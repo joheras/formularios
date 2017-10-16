@@ -1,0 +1,9 @@
+<html>
+    <title>Comments</title>    
+    <body>
+        {% for comment in comments %}
+            <p> Comment : {{ comment.content }}. 
+                <a href="{{ path('people_comment', { 'id': comment.id} ) }}">Edit</a></p> 
+        {% endfor %}
+    </body>
+</html>
