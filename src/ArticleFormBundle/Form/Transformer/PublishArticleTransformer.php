@@ -34,5 +34,6 @@ class PublishArticleTransformer implements DataTransformerInterface {
         else {
             $publishArticleCommand->existingArticle->unpublish();
         }
+        return $publishArticleCommand->existingArticle;
     }
 }
